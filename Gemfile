@@ -38,6 +38,7 @@ gem "bootstrap-sass", ">= 2.0.1"
 # TIM'S GEMS
 group :development, :test do
   gem 'sqlite3'
+  gem 'heroku'
 end
 
 group :production do
