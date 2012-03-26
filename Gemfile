@@ -23,6 +23,7 @@ gem "guard-livereload", ">= 0.3.0", :group => :development
 gem "guard-rspec", ">= 0.4.3", :group => :development
 gem "devise", ">= 2.1.0.rc"
 gem "bootstrap-sass", ">= 2.0.1"
+gem 'simple_form'
 
 # TIM'S GEMS
 group :development, :test do

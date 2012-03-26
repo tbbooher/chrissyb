@@ -1,0 +1,15 @@
+= simple_form_for(@patient) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :parent_name
+    = f.input :name
+    = f.input :street_address
+    = f.input :zip
+    = f.input :phone
+    = f.input :city
+    = f.input :state
+    = f.input :referring_source
+
+  .form-actions
+    = f.button :submit

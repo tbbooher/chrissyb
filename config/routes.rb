@@ -1,4 +1,6 @@
 Chrissybmspt::Application.routes.draw do
+  resources :patients
+
   authenticated :user do
     root :to => 'home#index'
   end
