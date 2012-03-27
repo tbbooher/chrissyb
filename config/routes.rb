@@ -1,4 +1,10 @@
 Chrissybmspt::Application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
+
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   resources :patients
 
   authenticated :user do

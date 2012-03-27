@@ -1,0 +1,7 @@
+= semantic_form_for [:admin, @visit] do |f|
+  = f.input :patient, collection: Patient.all
+  = f.input :meeting_start_time
+  = f.input :meeting_end_time
+  = f.input :location
+  = f.input :notes, as: :text, :input_html => {:class => :ckeditor}
+  = f.submit
