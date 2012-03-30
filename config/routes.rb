@@ -10,6 +10,11 @@ Chrissybmspt::Application.routes.draw do
   authenticated :user do
     root :to => 'home#index'
   end
+
+  get "bio" => "home#bio"
+  get "payment" => "home#payment"
+  get "services" => "home#services"
+
   root :to => "home#index"
   devise_for :users
   resources :users, :only => :show
