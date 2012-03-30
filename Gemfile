@@ -28,6 +28,7 @@ gem 'activeadmin'
 gem "ckeditor", "3.7.0.rc3"
 gem "carrierwave"
 gem "mini_magick"
+gem 'copycopter_client', '2.0.0'
 
 # TIM'S GEMS
 group :development, :test do

@@ -25,5 +25,7 @@
                 %div{:class => "alert alert-#{name == :notice ? "success" : "error"}"}
                   %a.close{"data-dismiss" => "alert"} ×
                   = msg
+              - if content_for?(:title)
+                %h1= yield(:title)
               = yield
           %footer
