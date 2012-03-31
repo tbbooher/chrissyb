@@ -25,6 +25,7 @@ gem "devise", ">= 2.1.0.rc"
 gem "bootstrap-sass", ">= 2.0.1"
 gem 'simple_form'
 gem 'activeadmin'
+gem "meta_search",    '>= 1.1.0.pre'
 gem "ckeditor", "3.7.0.rc3"
 gem "carrierwave"
 gem "mini_magick"

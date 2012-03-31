@@ -1,6 +1,11 @@
 Chrissybmspt::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
+
+  YAML.load_file(File.expand_path('../../copycopter.yml', __FILE__)).each do |key, value|
+    ENV[key.upcase] = value.to_s
+  end
+
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
@@ -30,14 +35,6 @@ Chrissybmspt::Application.configure do
     user_name: ENV["GMAIL_USERNAME"],
     password: ENV["GMAIL_PASSWORD"]
   }
-
-  heroku_config = File.expand_path('../copycopter.yml', __FILE__)
-  if File.exists?(heroku_config)
-    config = YAML.load_file(heroku_config)
-    config.fetch(Rails.env, {}).each do |key, value|
-      ENV[key.upcase] = value.to_s
-    end
-  end
 
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
