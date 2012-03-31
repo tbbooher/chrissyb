@@ -1,4 +1,8 @@
 Chrissybmspt::Application.routes.draw do
+
+  match 'contact' => 'contact#new', :as => 'contact', :via => :get
+  match 'contact' => 'contact#create', :as => 'contact', :via => :post
+
   get "patient_info/visits"
 
   get "patient_info/profile"
