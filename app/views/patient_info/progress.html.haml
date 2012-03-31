@@ -6,3 +6,17 @@
 
 - unless @patient.nil?
   %h2= "Progress for #{@patient.name}"
+
+  %h3 Goals
+  - @patient.goals.each do |goal|
+    %h4
+      Date:
+      = goal.goal_date
+    %h4 Description
+    = goal.description
+
+  %h3 Visits
+  - @patient.visits.each do |visit|
+    %h4= visit.short_description
+    %h4 Notes
+    = visit.notes.html_safe

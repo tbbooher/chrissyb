@@ -1,4 +1,5 @@
 class PatientInfoController < ApplicationController
+  layout 'patient_info.html'
   before_filter :authenticate_user!
   before_filter :find_user
   def visits
@@ -10,10 +11,11 @@ class PatientInfoController < ApplicationController
   end
 
   def progress
-    @patient = @user.patients.first
+
   end
 
   def find_user
     @user = current_user
+    @patient = @user.patients.first
   end
 end

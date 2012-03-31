@@ -1,3 +1,6 @@
 - title "visits"
 
-%p here we show each visit and how cool it is
+- @patient.visits.each do |visit|
+  %h4= visit.short_description
+  %h4 Notes
+  = visit.notes.html_safe

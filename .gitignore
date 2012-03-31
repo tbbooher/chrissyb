@@ -28,6 +28,8 @@ db/*.sqlite3
 .sass-cache
 /config/config.yml
 /config/database.yml
+/config/copycopter.yml
+routes.txt
 /coverage.data
 /coverage/
 /db/*.javadb/
