@@ -2,7 +2,7 @@
 
 = t('copy.services', :default => 'Nothing yet')
 
-%dl
+%dl.dl-horizontal
   - @services.each do |service|
-    %dd= service.name
-    %dt= service.description
+    %dt= service.name
+    %dd= service.description

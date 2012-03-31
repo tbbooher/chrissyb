@@ -1,4 +1,10 @@
 Chrissybmspt::Application.routes.draw do
+  get "patient_info/visits"
+
+  get "patient_info/profile"
+
+  get "patient_info/progress"
+
   mount Ckeditor::Engine => '/ckeditor'
 
   ActiveAdmin.routes(self)
