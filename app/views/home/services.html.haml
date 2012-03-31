@@ -2,58 +2,7 @@
 
 = t('copy.services', :default => 'Nothing yet')
 
-%p Families seek physical therapy treatment for their children through our practice for a variety of reasons. We have listed many, though not all, of them below. Our pediatric physical therapists are highly attuned to the unique needs of each child and they use professionally validated evaluation tools as a basis for their diagnoses and treatment plans. We offer physical therapy consultation services in our clinic or at the child's school.
-
 %dl
-  %dt Arthritis, other Rheumatic Diseases and Autoimmune Disorders:
-  %dd We provide physical therapy for helping individuals improve comfort, regain range of motion, and increase strength after being diagnosed or experiencing a "flare-up" with a rheumatic disease or an autoimmune disorder, such as Juvenile Dermatomyositis (JDM) or Juvenile Rheumatoid Arthritis (JRA).
-
-  %dt Autism Spectrum Disorders (ASD):
-  %dd We provide physical therapy for helping children with a diagnosis of Autism improve their gross motor skills and enhance their participation in group gross motor activities.
-
-Developmental Delays:
-Physical Therapy is essential for helping a young child under the age of three to acquire their gross motor skills. Physical Therapy for Developmental Delay is a "catch all" phrase to describe many different conditions such as delayed sitting, crawling, standing, walking.
-
-Developmental Disorders:
-Our pediatric physical therapists are experienced in treating children with a diagnosis of Down syndrome; Cerebral Palsy; and many other developmental disabilities that impair a child's acquisition of locomotor and gross motor skills.
-
-Hypotonia:
-Physical Therapy provided by our experienced clinicians can help a child with hypotonia, or low muscle tone, vastly improve their function. Hypotonia is a condition of weak muscle strength that may cause developmental problems including delays in acquisition of gross motor skills.
-
-Orthopedic Diagnosis:
-Pediatric Physical Therapy for Scoliosis can help prevent further spinal curvature and help to decrease the muscle pain that often accompanies this diagnosis. We also provide Physical Therapy for children who have sustained an orthopedic injury such as fractures and sprains, so they can return to their previous level of functioning more quickly.
-
-Premature Birth:
-Physical Therapy for premature infants is an essential way to help advance a preterm infant's development more quickly. A prematurely born infant may need support in a number of ways. We teach parents how to aid in their infant's skill acquisition, and in the process, strengthen parent-child bonding. Our natural play approach promotes both physical and cognitive development.
-
-Toe-Walking:
-Physical Therapy for toe walking, which is an abnormal gait pattern that, if untreated, can cause joint contractures at the ankles, can help improve a child's ability to walk and also decrease the need for other, more invasive treatment techniques.
-
-Torticollis:
-Physical therapy for infantile torticollis, which is a congenital muscular disorder causing lateral side-bending of the head toward the affected shoulder and rotation of head to opposite shoulder, is the most effective treatment for helping an infant gain better range of motion in their neck. Often, infants with this disorder have difficulty nursing, have poor head control and cannot tolerate being on their tummies. Our Pediatric Physical Therapists have excellent outcomes for helping infants make a complete recovery from torticollis. We also help teach the parents how to position their baby for nursing, sleep, and play to promote better head alignment. We also perform complete differential diagnosis to rule out other common dual diagnosis with torticollis, such as hip dysplasia, and disorders of the eye muscles.
-
-Consultation Services:
-We offer physical therapy consultation services for individuals who are considering adopting a child. Our services include a review of medical records and any related photographs or video clips that may illustrate the child's conditions or challenges.
-
-Pediatric Physical Therapy Treatment:
-
-At Play-Based Physical Therapy, we strive for optimal success and effectiveness in every child's treatment. To achieve this, we know we must work with the child and the parents or caregivers and to do so attentively, within the context of individual ability and circumstance. Educating caregivers is always a critical component of our work.
-
-Using our physical therapy evaluations as a basis, we design treatment plans that include a list of descriptive, date-specific functional outcomes. We also include in our plans a physical therapy home exercise program designed in collaboration with the family, taking into consideration the capacity of family members for involvement and participation. Our pediatric physical therapists periodically update the home programs, accounting for the child's progress and the family's feedback.
-
-Our treatment approach is responsive and, in every way possible, it is fun! We move sensitively and intentionally along with our children, often singing their favorite songs and playing games. We observe, guide and motivate, always following the lead of the child whose development is, after all, a natural, amazing process.
-
-Neurodevelopmental treatment
-Torticollis treatment
-Myofascial release
-Fabrication of casts and splints
-Functional mobility
-Whirlpool and wound care
-Pelvic floor rehabilitation for urinary incontinence
-Pain management
-Partial weight-bearing treadmill training
-Aquatics (in Largo only)
-Wheelchair and equipment evaluation
-Therasuit (St. Petersburg and Brandon only)
-Physical Therapy for Sports Medicine
-
+  - @services.each do |service|
+    %dd= service.name
+    %dt= service.description
