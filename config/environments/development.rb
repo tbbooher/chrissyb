@@ -31,7 +31,13 @@ Chrissybmspt::Application.configure do
     password: ENV["GMAIL_PASSWORD"]
   }
 
-
+  heroku_config = File.expand_path('../copycopter.yml', __FILE__)
+  if File.exists?(heroku_config)
+    config = YAML.load_file(heroku_config)
+    config.fetch(Rails.env, {}).each do |key, value|
+      ENV[key.upcase] = value.to_s
+    end
+  end
 
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
