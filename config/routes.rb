@@ -24,7 +24,6 @@ Chrissybmspt::Application.routes.draw do
   get "bio" => "home#bio"
   get "new_patients" => "home#new_patients"
   get "services" => "home#services"
-  get "contact" => "home#contact"
 
   root :to => "home#index"
   devise_for :users

@@ -1,3 +1,11 @@
+- title "Contact Us"
+
+- content_for :subtitle do
+  = t('copy.contact_page.subtitle', :default => 'copycopter update subtitle')
+
+- content_for :sidebar do
+  = t('copy.contact_page.sidebar', :default => 'copycopter update')
+
 = t('copy.contact_page', :default => 'I am excited you want to contact me. Because I\'m so cool')
 
 = simple_form_for @message, :html => {:class => 'form-horizontal' }, :url => contact_path do |form|
