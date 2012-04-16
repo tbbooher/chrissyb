@@ -28,4 +28,66 @@
               - if content_for?(:title)
                 %h1= yield(:title)
               = yield
-          %footer
+    %footer#footer
+      .right-shadow
+        .left-shadow
+          #footer-top
+            .container
+              #footer-widgets.clearfix
+                #customlogowidget-4.footer-widget.widget_customlogowidget
+                  %p#footer-logo
+                    %img{:alt => "", :src => "http://www.elegantthemes.com/preview/Modest/wp-content/uploads/2009/08/custom_logo.png"}
+                      %span ©  20010 Modest Inc
+                  .thumb
+                    %img.item-image{:alt => "", :src => "http://www.elegantthemes.com/preview/DelicateNews/wp-content/uploads/2010/07/thumb-4-56x56.png"}
+                      %span.overlay
+                  %p Rhoncus quis, varius sed velit. Mauris quis nunc eu nunc molestie egestas et sit amet odio. Morbi lacinia velit in nibh sodales sed pharetra sem feugiat. Vivamus ut cursus augue. Integer sit amet arcu lorem, at egestas tellus. Phasellus tellus orci, congue at tristique at, mattis ut arcu.
+                  %a.readmore{:href => "http://www.elegantthemes.com/preview/Modest/?page_id=127"}
+                    %span Learn More
+                / end .footer-widget
+                #recent-posts-3.footer-widget.widget_recent_entries
+                  %h4.widgettitle Recent Posts
+                  %ul
+                    %li
+                      %a{:href => "http://www.elegantthemes.com/preview/Modest/2009/08/nam-libero-tempore-cum-soluta-nobis-est-2/", :title => "Nam libero tempore soluta"} Nam libero tempore soluta
+                    %li
+                      %a{:href => "http://www.elegantthemes.com/preview/Modest/2009/08/sed-neque-ipsum-pulvinar-eu-tristique/", :title => "Sed neque ipsum pulvinar eu trist"} Sed neque ipsum pulvinar eu trist
+                    %li
+                      %a{:href => "http://www.elegantthemes.com/preview/Modest/2009/08/cras-eu-eros-id-dui-porttitor-luctus/", :title => "Cras eu eros id dui porttitor luctus"} Cras eu eros id dui porttitor luctus
+                    %li
+                      %a{:href => "http://www.elegantthemes.com/preview/Modest/2009/08/vivamus-vitae-nibh-id-quam-convallis-blandit/", :title => "Vivamus vitae nibh id quam"} Vivamus vitae nibh id quam
+                    %li
+                      %a{:href => "http://www.elegantthemes.com/preview/Modest/2009/08/aenean-vulputate-fermentum-ante-rhoncus-pulvinar/", :title => "Aenean vulputate fermentum ante"} Aenean vulputate fermentum ante
+                / end .footer-widget
+                #text-3.footer-widget.widget_text.last
+                  %h4.widgettitle Custom Text Widget
+                  .textwidget Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.Nullam ac erat.
+                .clear
+                / end .footer-widget
+              / end #footer-widgets
+              #footer-bottom.clearfix
+                %ul#menu-pages.bottom-nav
+                  %li.menu-item.menu-item-type-custom.menu-item-object-custom.current-menu-item.current_page_item.menu-item-home.menu-item-322
+                    %a{:href => "http://www.elegantthemes.com/preview/Modest/"} Home
+                  %li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-323
+                    %a{:href => "http://www.elegantthemes.com/preview/Modest/about-2/"} About
+                  %li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-327
+                    %a{:href => "http://www.elegantthemes.com/preview/Modest/partners/"} Partners
+                  %li.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-321
+                    %a{:href => "http://www.elegantthemes.com/preview/Modest/category/news/"} Blog
+                  %li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-365
+                    %a{:href => "http://www.elegantthemes.com/preview/Modest/location/"} Location
+                  %li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-366
+                    %a{:href => "http://www.elegantthemes.com/preview/Modest/contact/"} Page Templates
+                  %li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-372
+                    %a{:href => "http://www.elegantthemes.com/preview/Modest/shortcodes/"} Shortcodes
+                %p#copyright
+                  Designed by
+                  %a{:href => "http://www.elegantthemes.com"} Elegant WordPress Themes
+                  | Powered by
+                  %a{:href => "http://www.wordpress.org"} WordPress
+              / end #footer-bottom
+            / end .container
+          / end #footer-top
+        / end .left-shadow
+      / end .right-shadow
