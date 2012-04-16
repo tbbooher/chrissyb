@@ -1,18 +1,16 @@
-= link_to "PT with Chrissy", root_path, :class => 'brand'
-%ul#top-menu.nav
-  %li#menu-item=link_to 'About Me', bio_path
-  %li#menu-item=link_to 'Payment', payment_path
-  %li#menu-item=link_to 'Services', services_path
-  - if user_signed_in?
-    %li#menu-item
-      = link_to('Logout', destroy_user_session_path, :method=>'delete')
-    %li#menu-item= link_to 'Patient Info', patient_info_progress_path
-  - else
-    %li#menu-item
-      = link_to('Login', new_user_session_path)
-  - if user_signed_in?
-    %li#menu-item
-      = link_to('Edit account', edit_user_registration_path)
-  - else
-    %li#menu-item
-      = link_to('Sign up', new_user_registration_path)
+%li#menu-item=link_to 'About Me', bio_path
+%li#menu-item=link_to 'Payment', payment_path
+%li#menu-item=link_to 'Services', services_path
+- if user_signed_in?
+  %li#menu-item
+    = link_to('Logout', destroy_user_session_path, :method=>'delete')
+  %li#menu-item= link_to 'Patient Info', patient_info_progress_path
+- else
+  %li#menu-item
+    = link_to('Login', new_user_session_path)
+- if user_signed_in?
+  %li#menu-item
+    = link_to('Edit account', edit_user_registration_path)
+- else
+  %li#menu-item
+    = link_to('Sign up', new_user_registration_path)
