@@ -41,7 +41,7 @@
   %body.home.blog.chrome
     .right-shadow
       .left-shadow
-        .container.clearfix
+        %div{class: content_for?(:sidebar) ? "container clearfix" : "container clearfix fullwidth"}
           #header.clearfix
             %a{:href => "http://www.elegantthemes.com/preview/Modest"}
               %img#logo{:alt => "Modest Theme", :src => "http://www.elegantthemes.com/preview/Modest/wp-content/themes/Modest/images/logo.png"}/
