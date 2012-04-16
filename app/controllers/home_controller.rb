@@ -3,13 +3,20 @@ class HomeController < ApplicationController
     @users = User.all
   end
 
-  def services
-     @services = Service.all
-  end
   def bio
 
   end
-  def payment
+
+  def services
+     @services = Service.all
+  end
+
+  def new_patients
 
   end
+
+  def contact
+
+  end
+
 end

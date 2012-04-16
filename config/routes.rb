@@ -22,8 +22,9 @@ Chrissybmspt::Application.routes.draw do
   end
 
   get "bio" => "home#bio"
-  get "payment" => "home#payment"
+  get "new_patients" => "home#new_patients"
   get "services" => "home#services"
+  get "contact" => "home#contact"
 
   root :to => "home#index"
   devise_for :users

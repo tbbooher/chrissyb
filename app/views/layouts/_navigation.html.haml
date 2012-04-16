@@ -1,6 +1,9 @@
-%li#menu-item=link_to 'About Me', bio_path
-%li#menu-item=link_to 'Payment', payment_path
+%li#menu-item=link_to 'About', bio_path
 %li#menu-item=link_to 'Services', services_path
+%li#menu-item=link_to 'New Patients', new_patients_path
+%li#menu-item=link_to 'Contact', contact_path
+%li#menu-item=link_to 'Blog', "wordpress blog"
+
 - if user_signed_in?
   %li#menu-item
     = link_to('Logout', destroy_user_session_path, :method=>'delete')
