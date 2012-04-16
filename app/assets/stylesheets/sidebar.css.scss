@@ -1,0 +1,20 @@
+.widget {
+  width: 280px;
+  position: relative;
+  padding: 25px 25px 8px 40px;
+  h4.widgettitle {
+    font-family: 'Josefin Sans', arial, serif;
+    color: #1b1b1b;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0 0 22px 0; }
+  ul li {
+    background: url(images/footer-bullet.png) no-repeat 0px 12px;
+    padding: 5px 0 5px 12px;
+    display: block;
+    a {
+      color: #979797;
+      text-shadow: none;
+      text-decoration: none;
+      &:hover {
+        color: #767676; } } } }
