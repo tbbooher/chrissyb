@@ -43,3 +43,5 @@ group :production do
   gem 'thin'
   gem 'newrelic_rpm'
 end
+
+gem "formtastic", "~> 2.1.1"
