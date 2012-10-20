@@ -1,6 +1,10 @@
 class HomeController < ApplicationController
   def index
-    @users = User.all
+    if User.all.size > 0
+      @users = User.all
+      else
+      @users = nil
+    end
   end
 
   def bio

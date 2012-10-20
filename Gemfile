@@ -31,6 +31,7 @@ gem "carrierwave"
 gem "mini_magick"
 gem 'copycopter_client', git: 'git://github.com/copycopter/copycopter-ruby-client.git'
 #gem 'jekyll'
+gem 'therubyracer'
 
 # TIM'S GEMS
 group :development, :test do
