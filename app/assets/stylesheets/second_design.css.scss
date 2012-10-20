@@ -1,0 +1,42 @@
+#ArticleGrid {
+  width: 940px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text {
+  color: #333;
+  font-family: "myriad-pro-1","myriad-pro-2","Helvetica","Arial",sans-serif;
+}
+
+.text::selection, .text ::selection {
+  background: #447099;
+  color: white;
+}
+
+html {
+  background: image-url("tile.png") repeat-y scroll center top whiteSmoke;
+  color: black;
+}
+
+.LayoutGridBreakAfter::after, .LayoutBreakAfter::after {
+  clear: both;
+  display: block;
+  height: 0;
+  content: "\0020";
+}
+
+#SiteFooter {
+  margin-top: 16px;
+  background: #3D3D3D none;
+  background: -webkit-gradient(linear,left top,left bottom,from(#585858),to(#383838));
+  background: -moz-linear-gradient(top,#585858,#383838);
+  /* filter: progid:DXImageTransform.Microsoft.gradient(endcolorstr=#FF383838,startcolorstr=#FF585858)); */
+  background: -ms-linear-gradient(top,#585858,#383838);
+  background: -o-linear-gradient(top,#585858,#383838);
+  zoom: 1;
+  clear: both;
+}

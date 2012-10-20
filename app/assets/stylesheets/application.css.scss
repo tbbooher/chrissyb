@@ -8,15 +8,18 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
+ * require_self
  * require bootstrap_and_overrides
- *= require reset
- *= require basic_styles
- *= require comments
- *= require default_dropdown_settings
- *= require dropdown_menu
- *= require footer
- *= require main_layout
- *= require sidebar
+ *= require second_design
+ * require reset
+ * require basic_styles
+ * require comments
+ * require default_dropdown_settings
+ * require dropdown_menu
+ * require footer
+ * require sidebar
+ * require main_layout
 */
+
+
 
