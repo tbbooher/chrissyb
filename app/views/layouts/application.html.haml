@@ -11,7 +11,9 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
     = yield(:head)
-
+    %script{:src => "//use.typekit.net/wut2wet.js", :type => "text/javascript"}
+    :javascript
+      try{Typekit.load();}catch(e){}
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
   %body.text
     #ArticleGrid
@@ -19,7 +21,13 @@
         = render 'layouts/navigation'
       #SiteHeader
         = image_tag "PTPN_logo.png"
+        .logo_text
+          PEDIATRIC THERAPY PARTNERS OF NOVA
       #main_content
-        = yield
+        .LayoutBreakAfter
+          .ArticleGrid-1
+            %p foo
+          .ArticleGrid-2-4
+            = yield
       #SiteFooter
         %p this is the footer

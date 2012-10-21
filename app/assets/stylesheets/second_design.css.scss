@@ -1,19 +1,79 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+}
+
 #ArticleGrid {
+  _height: 1em;
+  *zoom: 100%;
   width: 940px;
   padding-left: 10px;
   padding-right: 10px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  &:after {
+    clear: left;
+    content: "\0020";
+    display: block;
+    height: 0
+  }
 }
 
 .text {
   color: #333;
   font-family: "myriad-pro-1","myriad-pro-2","Helvetica","Arial",sans-serif;
+  font-size: 12px;
   &:selection {
     background: #447099;
     color: white;
   }
+}
+
+.logo_text {
+  font-family: "garamond-premier-pro";
+  font-size: 27px;
+}
+
+h2 {
+  border-top: solid 1px #DDD;
+  padding-top: 12px;
+  margin-bottom: 9px;
+  font-weight: bold;
+  margin-top:18px;
+  display: block;
+  font-size: 1.5em;
+  -webkit-margin-before: 0.83em;
+  -webkit-margin-after: 0.83em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: bold;
+  font-family: 'Jura', sans-serif;
+}
+
+h3 {
+    border-top: solid 1px #DDD;
+    padding-top: 12px;
+    margin-bottom: 9px;
+    font-weight: bold;
+    margin-top:18px;
+    display: block;
+    font-size: 1em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+p {
+  font-family: "myriad-pro-1","myriad-pro-2","Helvetica","Arial",sans-serif;
 }
 
 html {
@@ -83,6 +143,7 @@ html {
   }
   a {
     color: #DDD!important;
+    padding: 1px 16px 0;
     text-decoration: none;
     text-shadow: 0 -1px 0 #151515;
     -moz-text-shadow: 0 -1px 0 #151515;
@@ -93,5 +154,60 @@ html {
       z-index: 1002;
     }
   }
+}
+
+
+
+.ArticleGrid-1 {
+  width: 220px
+}
+
+.ArticleGrid-1-2 {
+  width: 464px
+}
+
+.ArticleGrid-1-3 {
+  width: 708px
+}
+
+.ArticleGrid-1-4 {
+  width: 940px
+}
+
+.ArticleGrid-2 {
+  width: 233px
+}
+
+.ArticleGrid-2-3 {
+  width: 477px
+}
+
+.ArticleGrid-2-4 {
+  width: 709px
+}
+
+.ArticleGrid-3 {
+  width: 233px
+}
+
+.ArticleGrid-3-4 {
+  width: 465px
+}
+
+.ArticleGrid-4 {
+  width: 221px
+}
+
+.ArticleGrid-1, .ArticleGrid-1-2, .ArticleGrid-1-3, .ArticleGrid-1-4, .ArticleGrid-2-3 .ArticleGrid-2, .ArticleGrid-2-4 .ArticleGrid-2, .ArticleGrid-2-4 .ArticleGrid-2-3, .ArticleGrid-3-4 .ArticleGrid-3 {
+  clear: left;
+  margin-left: 0
+}
+
+.ArticleGrid-1, .ArticleGrid-1-2, .ArticleGrid-1-3, .ArticleGrid-1-4, .ArticleGrid-2, .ArticleGrid-2-3, .ArticleGrid-2-4, .ArticleGrid-3, .ArticleGrid-3-4, .ArticleGrid-4 {
+  float: left
+}
+
+.ArticleGrid-2, .ArticleGrid-2-3, .ArticleGrid-2-4, .ArticleGrid-3, .ArticleGrid-3-4, .ArticleGrid-4 {
+  margin-left: 11px
 }
 
