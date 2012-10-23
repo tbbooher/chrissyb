@@ -29,7 +29,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .text {
   color: #333;
   font-family: "myriad-pro-1","myriad-pro-2","Helvetica","Arial",sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   &:selection {
     background: #447099;
     color: white;
@@ -39,6 +39,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .logo_text {
   font-family: "garamond-premier-pro";
   font-size: 27px;
+  letter-spacing:3px;
 }
 
 h2 {
@@ -74,6 +75,7 @@ h3 {
 
 p {
   font-family: "myriad-pro-1","myriad-pro-2","Helvetica","Arial",sans-serif;
+  padding:7px 0;
 }
 
 html {
