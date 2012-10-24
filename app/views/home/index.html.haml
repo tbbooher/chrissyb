@@ -1,8 +1,20 @@
 - title "home page"
 
-.ArticleGrid-1-2
-  = image_tag "Chrissy-on-Ball.jpg"
-.ArticleGrid-3-4
+#wrapper
+  #slider_wrapper
+    #slider
+      = image_tag "splash/PTPN_Logo_Banner.jpg"
+      = image_tag "splash/ChrissyBallBanner.jpg"
+
+:javascript
+  $(window).load(function() {
+      $('#slider').nivoSlider();
+  });
+
+
+.ArticleGrid-1
+  foo
+.ArticleGrid-2-4
   %h2 Welcome!
 
   %p

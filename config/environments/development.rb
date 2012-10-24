@@ -2,9 +2,9 @@ Chrissybmspt::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
 
-  YAML.load_file(File.expand_path('../../copycopter.yml', __FILE__)).each do |key, value|
-    ENV[key.upcase] = value.to_s
-  end
+  #YAML.load_file(File.expand_path('../../copycopter.yml', __FILE__)).each do |key, value|
+  #  ENV[key.upcase] = value.to_s
+  #end
 
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development

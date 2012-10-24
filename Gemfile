@@ -29,7 +29,6 @@ gem "meta_search",    '>= 1.1.0.pre'
 gem "ckeditor", "3.7.0.rc3"
 gem "carrierwave"
 gem "mini_magick"
-gem 'nivo', :git => "git://github.com/rossnelson/nivo.git"
 
 #gem 'copycopter_client', git: 'git://github.com/copycopter/copycopter-ruby-client.git'
 #gem 'jekyll'

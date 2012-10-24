@@ -17,12 +17,9 @@
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
   %body.text
     #ArticleGrid
+      = link_to "", "/", class: "SiteHeaderHome"
       #SiteHeaderBar
         = render 'layouts/navigation'
-      #SiteHeader
-        = image_tag "PTPN_logo.png"
-        .logo_text
-          PEDIATRIC THERAPY PARTNERS OF NOVA
       #main_content.text
         .LayoutBreakAfter
           = yield
