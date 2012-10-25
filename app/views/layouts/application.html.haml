@@ -17,9 +17,10 @@
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
   %body.text
     #ArticleGrid
-      = link_to "", "/", class: "SiteHeaderHome"
-      #SiteHeaderBar
-        = render 'layouts/navigation'
+      #SiteHeader.TextSmall
+        = link_to "", "/", class: "SiteHeaderHome"
+        #SiteHeaderBar
+          = render 'layouts/navigation'
       #main_content.text
         .LayoutBreakAfter
           = yield

@@ -107,8 +107,19 @@ html {
   line-height: 39px;
 }
 
+#SiteHeader {
+  position: relative;
+  margin: 0 0 11px;
+  line-height: 14px;
+  min-width: 935px;
+  color: #333;
+  zoom: 1;
+  z-index: 999;
+  text-rendering: auto;
+}
+
 #SiteHeaderBar {
-  padding-left: 39px;
+  padding-left: 50px;
   line-height: 39px;
   background: #424242 none;
   background: -webkit-gradient(linear,left top,left bottom,from(#505050),to(#343434));
@@ -130,16 +141,29 @@ html {
   position: absolute;
   left: 0;
   top: 0;
-  height: 64px;
-  width: 39px;
+  height: 39px;
+  width: 50px;
   display: block;
-  background: image-url("hands.gif") no-repeat;
+  background: image-url("heart.gif") no-repeat;
   padding: 0;
   margin: 0;
 }
 
+.TextSmall {
+  font-size: 12px;
+  line-height: 16px;
+}
+
 .SiteHeaderBarItemFirst {
   border-left: 1px solid #414141;
+  padding-left: 200px;
+}
+
+.SiteHeaderTitle {
+  color:white;
+  font-size:15px;
+  float:left;
+  z-index: 1000;
 }
 
 .SiteHeaderBarItem {
