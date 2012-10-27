@@ -13,6 +13,18 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   border-bottom: 1px solid gray;
 }
 
+h1 {
+  width: 709px;
+  clear: left;
+  font-size: 20px;
+  font-weight: bolder;
+  float:left;
+}
+
+.title {
+  padding-bottom: 20px;
+}
+
 #ArticleGrid {
   _height: 1em;
   *zoom: 100%;
@@ -167,6 +179,18 @@ html {
   font-family: "garamond-premier-pro",serif;
 }
 
+/* for footer */
+
+.TextInvert {
+  color: white;
+}
+
+.LinkInvert a, .LinkInvert a:link, .LinkInvert a:visited, a.LinkInvert, a.LinkInvert:link, a.LinkInvert:visited {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .SiteHeaderBarItem {
   position: relative;
   float: left;
@@ -254,3 +278,19 @@ html {
   margin-left: 11px
 }
 
+hr {
+  width: auto;
+  height: 1px;
+  margin: 0 0 10px 0;
+}
+
+#SiteFooter hr {
+  width: 100%;
+  border-style: none;
+  border-top: 2px groove #555;
+}
+
+.LayoutCell, .LayoutCellSides {
+  padding-left: 11px;
+  padding-right: 11px;
+}

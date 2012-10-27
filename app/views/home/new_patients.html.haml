@@ -1,8 +1,5 @@
 - title "New Patients"
 
-- content_for :subtitle do
-  this is a subtitle
-
 %h2 What happens during my initial visit?
 
 %p
@@ -43,8 +40,9 @@
   as possible.  While I understand that the process can be stressful, I
   do my best to minimize stress and open communication.
 
-- content_for :sidebar do
-  %p over here -- link to initial sign up forms, stuff like . . .
+%p
+  over here -- link to initial sign up forms, stuff like . . .
+%ul
   %li= link_to "New patient registration form", 'http://www.pediatricpotentialsnj.com/PP/PPpng/files/New%20patient%20registration%20form%20(pdf).pdf'
   %li= link_to "Early childhood checklist", 'http://www.pediatricpotentialsnj.com/PP/PPpng/files/early%20childhood%20checklist.pdf'
   %li= link_to "School age checklist", 'http://www.pediatricpotentialsnj.com/PP/PPpng/files/school%20age%20checklist.pdf'

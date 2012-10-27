@@ -21,8 +21,23 @@
         = link_to "", "/", class: "SiteHeaderHome"
         #SiteHeaderBar
           = render 'layouts/navigation'
+      #Title
+        - if content_for?(:title)
+          .LayoutBreakAfter.title
+            .ArticleGrid-1
+              &nbsp;
+            .ArticleGrid-2-4
+              %h1= yield(:title)
+            - if content_for?(:subtitle)
+              %p.description= yield(:subtitle)
       #main_content.text
         .LayoutBreakAfter
-          = yield
+          .ArticleGrid-1
+            - if content_for?(:sidebar)
+              = yield(:sidebar)
+            - else
+              %p &nbsp;
+          .ArticleGrid-2-4
+            = yield
       #SiteFooter
-        %p this is the footer
+        = render 'layouts/footer'
