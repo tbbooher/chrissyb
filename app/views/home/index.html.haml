@@ -1,25 +1,26 @@
-#wrapper
-  #slider_wrapper
-    #slider
-      = image_tag "splash/PTPN_Logo_Banner.jpg"
-      = image_tag "splash/ChrissyBallBanner.jpg"
+- content_for :topbar do
+  #wrapper
+    #slider_wrapper
+      #slider
+        = image_tag "splash/PTPN_Logo_Banner.jpg"
+        = image_tag "splash/ChrissyBallBanner.jpg"
 
-:javascript
-  $(window).load(function() {
-      $('#slider').nivoSlider();
-  });
+  :javascript
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
 
 %h1 Welcome
 
-.ArticleGrid-1
+- content_for :sidebar do
   = image_tag "ChrissyAndAnne.jpg"
-.ArticleGrid-2-4
-  %p
-    Chrissy Booher is a Pediatric Physical Therapist who provides home-based Physical Therapy
-    to infants and children in Alexandria, VA and surrounding cities.
-    Therapy is play based, yet guided by research driven principles as well as a
-    thorough understanding of anatomy, human movement and development.
 
-  %p Thanks for visiting, and I look forward to talking with you soon!
+%p
+  Chrissy Booher is a Pediatric Physical Therapist who provides home-based Physical Therapy
+  to infants and children in Alexandria, VA and surrounding cities.
+  Therapy is play based, yet guided by research driven principles as well as a
+  thorough understanding of anatomy, human movement and development.
+
+%p Thanks for visiting, and I look forward to talking with you soon!
 
 

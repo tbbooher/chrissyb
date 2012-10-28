@@ -31,6 +31,9 @@
             - if content_for?(:subtitle)
               %p.description= yield(:subtitle)
       #main_content.text
+        - if content_for?(:topbar)
+          .LayoutBreakAfter
+            = yield(:topbar)
         .LayoutBreakAfter
           .ArticleGrid-1
             - if content_for?(:sidebar)
