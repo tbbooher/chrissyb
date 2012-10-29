@@ -21,11 +21,13 @@ Chrissybmspt::Application.routes.draw do
     root :to => 'home#index'
   end
 
-  get "bio" => "home#bio"
+  get "about" => "home#about"
   get "new_patients" => "home#new_patients"
   get "services" => "home#services"
+  get "testimonials" => "home#testimonials"
 
   root :to => "home#index"
   devise_for :users
   resources :users, :only => :show
+
 end

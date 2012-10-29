@@ -7,7 +7,7 @@ class HomeController < ApplicationController
     end
   end
 
-  def bio
+  def about
 
   end
 

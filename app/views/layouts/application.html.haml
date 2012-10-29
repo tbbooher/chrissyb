@@ -18,7 +18,7 @@
   %body.text
     #ArticleGrid
       #SiteHeader.TextSmall
-        = link_to "", "/", class: "SiteHeaderHome"
+        / = link_to "", "/", class: "SiteHeaderHome"
         #SiteHeaderBar
           = render 'layouts/navigation'
       #Title
@@ -32,7 +32,7 @@
               %p.description= yield(:subtitle)
       #main_content.text
         - if content_for?(:topbar)
-          .LayoutBreakAfter
+          .LayoutBreakAfter.topbar
             = yield(:topbar)
         .LayoutBreakAfter
           .ArticleGrid-1
