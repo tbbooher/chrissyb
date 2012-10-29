@@ -36,6 +36,9 @@ Chrissybmspt::Application.configure do
     password: ENV["GMAIL_PASSWORD"]
   }
 
+  # ENV["GMAIL_USERNAME"]
+  # ENV["GMAIL_PASSWORD"]
+
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
 

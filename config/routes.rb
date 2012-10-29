@@ -25,6 +25,7 @@ Chrissybmspt::Application.routes.draw do
   get "new_patients" => "home#new_patients"
   get "services" => "home#services"
   get "testimonials" => "home#testimonials"
+  get "contact_success" => "contact#success"
 
   root :to => "home#index"
   devise_for :users

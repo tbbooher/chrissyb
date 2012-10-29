@@ -1,16 +1,17 @@
 $light_orange: #FDD395;
 $dark_orange: #FBB040;
 
-
 $dark_blue: #1B2B5F;
 $light_blue: #5167AF;
 
+$shadow: #ababab;
+
 /* #546292 */
+
+$header_line: 40px;
 
 $blue1: $light_blue;
 $blue2: $dark_blue; /* #8998C9; */
-
-
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
     margin: 0;
@@ -162,7 +163,7 @@ html {
 
 #SiteHeaderBar {
   padding-left: 10px;
-  line-height: 39px;
+  line-height: $header_line;
   background: #424242 none;
   background: -webkit-gradient(linear,left top,left bottom,from($dark_blue),to($light_blue));
   background: -moz-linear-gradient(top,$dark_blue,$light_blue);
@@ -183,7 +184,7 @@ html {
   position: absolute;
   left: 0;
   top: 0;
-  height: 39px;
+  height: $header_line;
   width: 50px;
   display: block;
   /* background: image-url("heart.gif") no-repeat; */
@@ -202,6 +203,7 @@ html {
 }
 
 .SiteHeaderTitle {
+  padding-top: 5px;
   color:white;
   font-weight: 700;
   font-size:16px;
@@ -246,8 +248,8 @@ html {
     color: white !important;
     padding: 1px 16px 0;
     text-decoration: none;
-    text-shadow: 0 -1px 0 #151515;
-    -moz-text-shadow: 0 -1px 0 #151515;
+    text-shadow: 0 -1px 0 $shadow;
+    -moz-text-shadow: 0 -1px 0 $shadow;
     position: relative;
     display: block;
     &:visited:hover, &:hover, &:visited:focus &:focus {
