@@ -41,6 +41,10 @@
             - else
               %p &nbsp;
           .ArticleGrid-2-4
-            = yield
+            .mainContent
+              = yield
+        - if content_for?(:wide_open)
+          .LayoutBreakAfter
+            =yield(:wide_open)
       #SiteFooter
         = render 'layouts/footer'

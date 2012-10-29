@@ -23,5 +23,10 @@
  * require main_layout
 */
 
+/* we just want some nice bootstrap, but only where we want it, with forms */
+@import "bootstrap/_mixins.scss";
+@import "bootstrap/_variables.scss";
+@import "bootstrap/_forms.scss";
+
 
 

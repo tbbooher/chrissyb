@@ -1,12 +1,16 @@
 - title "Contact Us"
 
-%p please contact me . . .
+- content_for :sidebar do
+  %p &nbsp;
+
+%p
+  Pellentesque laoreet lobortis est ac adipiscing. Proin vitae ipsum est, sit amet posuere libero. Nam rutrum convallis egestas. Nam velit nisi, lobortis sollicitudin commodo suscipit, viverra eu ligula. Nunc viverra egestas nulla, fringilla venenatis dolor dapibus in.
 
 = simple_form_for @message, :html => {:class => 'form-horizontal' }, :url => contact_path do |form|
   %fieldset
-    = form.input :name
-    = form.input :email
-    = form.input :subject
-    = form.input :body, as: :text
+    = form.input :name, input_html: {class: "span6"}
+    = form.input :email, input_html: {class: "span6"}
+    = form.input :subject, input_html: {class: "span6"}
+    = form.input :body, as: :text, input_html: {class: "span6", rows: "5"}
   .form-actions
     = form.button :submit, class: 'btn-primary'

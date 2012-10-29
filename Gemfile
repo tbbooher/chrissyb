@@ -46,4 +46,4 @@ group :production do
   gem 'newrelic_rpm'
 end
 
-gem "formtastic", "~> 2.1.1"
+#gem "formtastic", "~> 2.1.1"
