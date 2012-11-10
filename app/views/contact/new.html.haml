@@ -10,12 +10,12 @@
 
 = simple_form_for @message, :html => {:class => 'form-horizontal' }, :url => contact_path do |form|
   %fieldset
-    = form.input :parents_names, input_html: {class: "span6"}, :label => "your name"
+    = form.input :parents_names, input_html: {class: "span6"}, :label => "Your Name"
     = form.input :email, input_html: {class: "span6"}
     = form.input :phone, input_html: {class: "span6"}
-    = form.input :childs_name, input_html: {class: "span6"}, :label => "your child's name"
+    = form.input :childs_name, input_html: {class: "span6"}, :label => "Your Child's Name"
     = form.input :concern, input_html: {class: "span6"}
-    = form.input :city, input_html: {class: "span6"}   , :label => "your city or zip code"
-    = form.input :body, as: :text, input_html: {class: "span6", rows: "5"}, :label => "any comments you would like to add (best time to reach you...)"
+    = form.input :city, input_html: {class: "span6"}   , :label => "Your Zip Code or City"
+    = form.input :body, as: :text, input_html: {class: "span6", rows: "5"}, :label => "Any Additional Comments (best time to reach you/ preferred method of contact...)"
   .form-actions
     = form.button :submit, class: 'btn-primary'
