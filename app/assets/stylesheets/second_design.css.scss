@@ -335,6 +335,13 @@ hr {
   zoom: 1;
   clear: both;
   line-height: 39px;
+  li {
+    list-style: none;
+    padding-bottom:10px;
+    span {
+      padding-left: 20px;
+    }
+  }
   hr {
     width: 100%;
     border-style: none;
@@ -353,3 +360,4 @@ hr {
 ul {
   padding-left:25px;
 }
+
