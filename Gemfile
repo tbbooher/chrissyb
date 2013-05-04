@@ -45,5 +45,6 @@ group :production do
   gem 'thin'
   gem 'newrelic_rpm'
 end
+gem 'sitemap_generator'
 
 #gem "formtastic", "~> 2.1.1"
