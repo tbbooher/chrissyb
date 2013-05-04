@@ -1,4 +1,4 @@
 User-agent: *
-Sitemap: http://www.ptpnova.com/sitemap.xml.gz
 Disallow:
-
+Allow: /
+Sitemap: http://www.ptpnova.com/sitemap.xml.gz
